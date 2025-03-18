@@ -1,0 +1,83 @@
+[
+  {
+    "name": "StuG III G",
+    "country": "Germany",
+    "class": "Assault Gun",
+    "size": "Medium",
+    "description": "The StuG III G was a variant of the Sturmgeschütz III, a German assault gun used extensively during World War II. It was designed for infantry support but proved highly effective in anti-tank warfare. The G model, produced from 1942, featured a powerful 75mm gun and was one of the most produced German armored vehicles of the war.",
+    "image": "images/StuG_III_G.jpg",
+    "stl": "models/StuG_III_G.stl"
+  },
+  {
+    "name": "Tiger I",
+    "country": "Germany",
+    "class": "Heavy Tank",
+    "size": "Large",
+    "description": "The Tiger I was a heavy tank used by Germany during World War II. Known for its formidable 88mm gun and thick armor, it was a feared weapon on the battlefield. Although plagued by mechanical issues and logistical problems, it achieved significant success, especially in battles like Kursk and in North Africa.",
+    "image": "images/Tiger_I.jpg",
+    "stl": "models/Tiger_I.stl"
+  },
+  {
+    "name": "Sd. Kfz. 234/2 (Puma)",
+    "country": "Germany",
+    "class": "Armored Car",
+    "size": "Medium",
+    "description": "The Sd. Kfz. 234/2, also known as the Puma, was a German armored reconnaissance vehicle. Armed with a 50mm gun, it was fast, well-armored for its class, and highly effective in reconnaissance and anti-tank roles. It was used in various theaters during World War II, particularly on the Eastern Front and in Italy.",
+    "image": "images/Sd_Kfz_234_2_Puma.jpg",
+    "stl": "models/Sd_Kfz_234_2_Puma.stl"
+  },
+  {
+    "name": "M22",
+    "country": "United States",
+    "class": "Light Tank",
+    "size": "Small",
+    "description": "The M22, also known as the 'Locust,' was an American light tank designed for airborne operations. It was airdropped with paratroopers and was used in limited roles during World War II. Although lightly armored and armed with a 37mm gun, it was valued for its mobility and ability to be deployed quickly.",
+    "image": "images/M22.jpg",
+    "stl": "models/M22.stl"
+  },
+  {
+    "name": "M4A2",
+    "country": "United States",
+    "class": "Medium Tank",
+    "size": "Medium",
+    "description": "The M4A2 Sherman was a variant of the iconic M4 Sherman medium tank, powered by a diesel engine. It was widely used by the U.S. Army and Allies in various theaters of World War II, including the Western Front and Pacific. Its versatility, combined with decent armor and firepower, made it one of the most effective tanks of the war.",
+    "image": "images/M4A2.jpg",
+    "stl": "models/M4A2.stl"
+  },
+  {
+    "name": "M3",
+    "country": "United States",
+    "class": "Light Tank",
+    "size": "Small",
+    "description": "The M3 was an early American light tank used in the initial stages of World War II. It featured a 37mm gun and was notably used in the North African campaign. Although it was eventually outclassed by newer designs, it played a significant role in the early days of the war, especially in the U.S. Army's armored forces.",
+    "image": "images/M3.jpg",
+    "stl": "models/M3.stl"
+  },
+  {
+    "name": "KV-2",
+    "country": "Soviet Union",
+    "class": "Heavy Tank",
+    "size": "Large",
+    "description": "The KV-2 was a variant of the KV-1, featuring a massive 152mm howitzer instead of the standard 76.2mm gun. Designed for destruction of fortifications, its large turret made it slow and vulnerable, but it had formidable firepower. It was used in the early years of World War II, particularly in the Soviet defense against German advances.",
+    "image": "images/KV-2.jpg",
+    "stl": "models/KV-2.stl"
+  },
+  {
+    "name": "T-34 (42)",
+    "country": "Soviet Union",
+    "class": "Medium Tank",
+    "size": "Medium",
+    "description": "The T-34/42 was a modified version of the famous T-34, featuring improved armor and a more powerful gun. Introduced in 1942, it was one of the most effective tanks of World War II, known for its combination of sloped armor, mobility, and firepower. The T-34's design influenced tank development for decades.",
+    "image": "images/T-34_42.jpg",
+    "stl": "models/T-34_42.stl"
+  },
+  {
+    "name": "Su-122",
+    "country": "Soviet Union",
+    "class": "Self-Propelled Gun",
+    "size": "Medium",
+    "description": "The Su-122 was a Soviet self-propelled gun designed to provide fire support for Soviet infantry and tanks. Armed with a 122mm howitzer, it was effective in both anti-tank and artillery support roles. It was widely used in the Eastern Front and played a role in Soviet armored breakthroughs.",
+    "image": "images/Su-122.jpg",
+    "stl": "models/Su-122.stl"
+  }
+]
