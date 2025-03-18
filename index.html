@@ -5,96 +5,67 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Tanks</title>
         <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+        <style>
+            :root {
+                --paynesgrey: #4f6d7a;
+                --columbiablue: #c0d6df;
+                --dutchwhite: #e8dab2;
+                --burntsienna: #dd6e42;
+                --platinum: #eaeaea;
+            }
+        </style>
     </head>
-    <body class="bg-slate-950">
+    <body class="bg-[var(--paynesgrey)] h-screen overflow-hidden flex flex-col">
+        <!-- Sidebar -->
         <div
-            id="sidecar"
-            class="rounded-lg overflow-hidden shadow-lg object-left-top w-fit h-max m-10 p-3 bg-slate-800"
+            class="rounded-lg overflow-hidden shadow-lg w-fit h-screen m-5 p-3 bg-[var(--columbiablue)] flex flex-col"
         >
             <h1 class="font-mono font-black text-center">Tanks</h1>
-            <nav class="place-content-center">
+
+            <!-- Navigation -->
+            <nav class="flex-grow">
                 <ul>
-                    <li>
-                        <button
-                            class="bg-white hover:bg-slate-100 text-slate-700 font-semibold py-2 px-4 border border-gray-400 rounded shadow m-3.5"
-                        >
-                            Home
-                        </button>
-                    </li>
-                    <li>
-                        <button
-                            class="bg-white hover:bg-slate-100 text-slate-700 font-semibold py-2 px-4 border border-gray-400 rounded shadow m-3.5"
-                        >
-                            Stug III G
-                        </button>
-                    </li>
-                    <li>
-                        <button
-                            class="bg-white hover:bg-slate-100 text-slate-700 font-semibold py-2 px-4 border border-gray-400 rounded shadow m-3.5"
-                        >
-                            Tiger I
-                        </button>
-                    </li>
-                    <li>
-                        <button
-                            class="bg-white hover:bg-slate-100 text-slate-700 font-semibold py-2 px-4 border border-gray-400 rounded shadow m-3.5"
-                        >
-                            Sd. kfz 234/2
-                        </button>
-                    </li>
-                    <li>
-                        <button
-                            class="bg-white hover:bg-slate-100 text-slate-700 font-semibold py-2 px-4 border border-gray-400 rounded shadow m-3.5"
-                        >
-                            M22
-                        </button>
-                    </li>
-                    <li>
-                        <button
-                            class="bg-white hover:bg-slate-100 text-slate-700 font-semibold py-2 px-4 border border-gray-400 rounded shadow m-3.5"
-                        >
-                            M3
-                        </button>
-                    </li>
-                    <li>
-                        <button
-                            class="bg-white hover:bg-slate-100 text-slate-700 font-semibold py-2 px-4 border border-gray-400 rounded shadow m-3.5"
-                        >
-                            M4A2
-                        </button>
-                    </li>
-                    <li>
-                        <button
-                            class="bg-white hover:bg-slate-100 text-slate-700 font-semibold py-2 px-4 border border-gray-400 rounded shadow m-3.5"
-                        >
-                            KV-2
-                        </button>
-                    </li>
-                    <li>
-                        <button
-                            class="bg-white hover:bg-slate-100 text-slate-700 font-semibold py-2 px-4 border border-gray-400 rounded shadow m-3.5"
-                        >
-                            T-34
-                        </button>
-                    </li>
-                    <li>
-                        <button
-                            class="bg-white hover:bg-slate-100 text-slate-700 font-semibold py-2 px-4 border border-gray-400 rounded shadow m-3.5"
-                        >
-                            SU-122
-                        </button>
-                    </li>
+                    <li><button class="tank-button">Home</button></li>
+                    <li><button class="tank-button">Stug III G</button></li>
+                    <li><button class="tank-button">Tiger I</button></li>
+                    <li><button class="tank-button">Sd. Kfz 234/2</button></li>
+                    <li><button class="tank-button">M22</button></li>
+                    <li><button class="tank-button">M3</button></li>
+                    <li><button class="tank-button">M4A2</button></li>
+                    <li><button class="tank-button">KV-2</button></li>
+                    <li><button class="tank-button">T-34</button></li>
+                    <li><button class="tank-button">SU-122</button></li>
                 </ul>
-                <p
-                    class="text-align-center shadow-lg overflow-hidden rounded-md p-2 m-1 text-slate-700"
-                >
-                    This site was built and is managed by<br />
-                    <a href="https://bagpipesrbetter.github.io"
-                        >BagpipesRbetter.</a
-                    >
-                </p>
             </nav>
+
+            <!-- Footer -->
+            <p
+                class="mt-auto shadow-lg rounded-md p-2 bg-[var(--paynesgrey)] text-[var(--platinum)] text-center"
+            >
+                This site was built and is managed by<br />
+                <a href="https://bagpipesrbetter.github.io" class="underline"
+                    >BagpipesRbetter</a
+                >
+            </p>
         </div>
-        <div id="bottominfo"></div>
+
+        <style>
+            /* Reusable Button Style */
+            .tank-button {
+                background-color: var(--burntsienna);
+                color: var(--platinum);
+                font-weight: 600;
+                padding: 0.5rem 1rem;
+                border: 1px solid gray;
+                border-radius: 0.25rem;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                margin: 0.5rem;
+                transition: background 0.2s;
+            }
+
+            .tank-button:hover {
+                background-color: var(--dutchwhite);
+            }
+        </style>
     </body>
 </html>
