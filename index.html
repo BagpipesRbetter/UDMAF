@@ -1,38 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Site Title</title>
-    <!-- Add your custom styles here -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Tailwind CSS CDN (Optional) -->
-    <script
-src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"></script>
-</head>
-<body class="antialiased">
-
-    <!-- Navigation -->
-    <header class="bg-gray-800 text-white py-5">
-        <div class="container flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold">Your Site Logo</a>
-            <!-- Add your navigation menu here -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tanks</title>
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    </head>
+    <body>
+        <div
+            id="sidecar"
+            class="rounded overflow-hidden shadow-lg object-left-top w-fit h-max m-10 p-4"
+        >
+            <h1 class="font-mono font-black text-center">Tanks</h1>
+            <nav class="place-items-center">
+                <ul>
+                    <li>
+                        <button
+                            class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow m-3.5"
+                        >
+                            Home
+                        </button>
+                    </li>
+                    <li>
+                        <button
+                            class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow m-3.5"
+                        >
+                            Stug III G
+                        </button>
+                    </li>
+                    <li>
+                        <button
+                            class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow m-3.5"
+                        >
+                            Tiger I
+                        </button>
+                    </li>
+                    <li>
+                        <button
+                            class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow m-3.5"
+                        >
+                            Sd. kfz 234/2
+                        </button>
+                    </li>
+                    <li>
+                        <button
+                            class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow m-3.5"
+                        >
+                            M22
+                        </button>
+                    </li>
+                    <li>
+                        <button
+                            class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow m-3.5"
+                        >
+                            M3
+                        </button>
+                    </li>
+                    <li>
+                        <button
+                            class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow m-3.5"
+                        >
+                            M4A2
+                        </button>
+                    </li>
+                    <li>
+                        <button
+                            class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow m-3.5"
+                        >
+                            KV-2
+                        </button>
+                    </li>
+                    <li>
+                        <button
+                            class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow m-3.5"
+                        >
+                            T-34
+                        </button>
+                    </li>
+                    <li>
+                        <button
+                            class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow m-3.5"
+                        >
+                            SU-122
+                        </button>
+                    </li>
+                </ul>
+                <p class="">
+                    this site was built and is managed by<br />
+                    <a href="https://bagpipesrbetter.github.io"
+                        >BagpipesRbetter</a
+                    >
+                </p>
+            </nav>
         </div>
-    </header>
-
-    <!-- Main Content -->
-    <main role="main" class="container pt-16">
-        <!-- Add your content here -->
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-5">
-        <div class="container text-center">
-            <!-- Add copyright and social media links here -->
-        </div>
-    </footer>
-
-    <!-- Your custom JavaScript goes here -->
-    <script src="scripts.js"></script>
-</body>
+        <div id="bottominfo"></div>
+    </body>
 </html>
