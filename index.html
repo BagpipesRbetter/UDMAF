@@ -169,7 +169,7 @@
 
                         buttons.forEach((button) => {
                             button.addEventListener("click", () => {
-                                const tankId = button.id();
+                                const tankId = button.id;
                                 const selectedTank = tankData.find(
                                     (tank) => tank.id === tankId,
                                 );
