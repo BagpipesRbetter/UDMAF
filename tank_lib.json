@@ -1,5 +1,16 @@
 [
   {
+    "id": "home",
+    "name": "Home",
+    "country": "World",
+    "class": "Home",
+    "size": "Small",
+    "description": "This is a site that displays some of my favorite tanks from wwII. it is not meant to be comprehensive or exhaustive, but rather a curated selection of tanks that have left a lasting impact on military history. this is for information and entertainment purposes only. ",
+    "image": "",
+    "stl": ""
+  },
+  {
+    "id": "StuG_III_G",
     "name": "StuG III G",
     "country": "Germany",
     "class": "Assault Gun",
@@ -9,6 +20,7 @@
     "stl": "models/StuG_III_G.stl"
   },
   {
+    "id": "Tiger_I",
     "name": "Tiger I",
     "country": "Germany",
     "class": "Heavy Tank",
@@ -18,6 +30,7 @@
     "stl": "models/Tiger_I.stl"
   },
   {
+    "id": "Sd_Kfz_234_2_Puma",
     "name": "Sd. Kfz. 234/2 (Puma)",
     "country": "Germany",
     "class": "Armored Car",
@@ -27,6 +40,7 @@
     "stl": "models/Sd_Kfz_234_2_Puma.stl"
   },
   {
+    "id": "M22",
     "name": "M22",
     "country": "United States",
     "class": "Light Tank",
@@ -36,6 +50,7 @@
     "stl": "models/M22.stl"
   },
   {
+    "id": "M4A2",
     "name": "M4A2",
     "country": "United States",
     "class": "Medium Tank",
@@ -45,6 +60,7 @@
     "stl": "models/M4A2.stl"
   },
   {
+    "id": "M3",
     "name": "M3",
     "country": "United States",
     "class": "Light Tank",
@@ -54,6 +70,7 @@
     "stl": "models/M3.stl"
   },
   {
+    "id": "KV-2",
     "name": "KV-2",
     "country": "Soviet Union",
     "class": "Heavy Tank",
@@ -63,6 +80,7 @@
     "stl": "models/KV-2.stl"
   },
   {
+    "id": "T-34",
     "name": "T-34 (42)",
     "country": "Soviet Union",
     "class": "Medium Tank",
@@ -72,6 +90,7 @@
     "stl": "models/T-34_42.stl"
   },
   {
+    "id": "SU-122",
     "name": "Su-122",
     "country": "Soviet Union",
     "class": "Self-Propelled Gun",

@@ -33,14 +33,17 @@
                         <div
                             class="flex items-center justify-between w-full p-1"
                         >
-                            <button class="tank-button">Home</button>
+                            <button id="home" class="tank-button">Home</button>
+                            <img src="un.svg" class="w-12 h-8 ml-2 rounded" />
                         </div>
                     </li>
                     <li>
                         <div
                             class="flex items-center justify-between w-full p-1"
                         >
-                            <button class="tank-button">Stug III G</button>
+                            <button id="StuG_III_G" class="tank-button">
+                                Stug III G
+                            </button>
                             <img src="de.svg" class="w-12 h-8 ml-2 rounded" />
                         </div>
                     </li>
@@ -48,7 +51,9 @@
                         <div
                             class="flex items-center justify-between w-full p-1"
                         >
-                            <button class="tank-button">Tiger I</button>
+                            <button id="Tiger_I" class="tank-button">
+                                Tiger I
+                            </button>
                             <img src="de.svg" class="w-12 h-8 ml-2 rounded" />
                         </div>
                     </li>
@@ -56,7 +61,9 @@
                         <div
                             class="flex items-center justify-between w-full p-1"
                         >
-                            <button class="tank-button">Sd. Kfz 234/2</button>
+                            <button id="Sd_Kfz_234_2_Puma" class="tank-button">
+                                Sd. Kfz 234/2
+                            </button>
                             <img src="de.svg" class="w-12 h-8 ml-2 rounded" />
                         </div>
                     </li>
@@ -64,7 +71,7 @@
                         <div
                             class="flex items-center justify-between w-full p-1"
                         >
-                            <button class="tank-button">M22</button>
+                            <button id="M22" class="tank-button">M22</button>
                             <img src="us.jpg" class="w-12 h-8 ml-2 rounded" />
                         </div>
                     </li>
@@ -72,7 +79,7 @@
                         <div
                             class="flex items-center justify-between w-full p-1"
                         >
-                            <button class="tank-button">M3</button>
+                            <button id="M3" class="tank-button">M3</button>
                             <img src="us.jpg" class="w-12 h-8 ml-2 rounded" />
                         </div>
                     </li>
@@ -80,7 +87,7 @@
                         <div
                             class="flex items-center justify-between w-full p-1"
                         >
-                            <button class="tank-button">M4A2</button>
+                            <button id="M4A2" class="tank-button">M4A2</button>
                             <img src="us.jpg" class="w-12 h-8 ml-2 rounded" />
                         </div>
                     </li>
@@ -88,7 +95,7 @@
                         <div
                             class="flex items-center justify-between w-full p-1"
                         >
-                            <button class="tank-button">KV-2</button>
+                            <button id="KV-2" class="tank-button">KV-2</button>
                             <img src="su.svg" class="w-12 h-8 ml-2 rounded" />
                         </div>
                     </li>
@@ -96,7 +103,7 @@
                         <div
                             class="flex items-center justify-between w-full p-1"
                         >
-                            <button class="tank-button">T-34</button>
+                            <button id="T-34" class="tank-button">T-34</button>
                             <img src="su.svg" class="w-12 h-8 ml-2 rounded" />
                         </div>
                     </li>
@@ -104,7 +111,9 @@
                         <div
                             class="flex items-center justify-between w-full p-1"
                         >
-                            <button class="tank-button">SU-122</button>
+                            <button id="SU-122" class="tank-button">
+                                SU-122
+                            </button>
                             <img src="su.svg" class="w-12 h-8 ml-2 rounded" />
                         </div>
                     </li>
@@ -127,21 +136,76 @@
         >
             <div
                 id="specs"
-                class="mt-0 shadow-lg rounded-md p-2 bg-[var(--light-color)] text-[var(--mid-color)] text-center"
+                class="mt-0 shadow-lg rounded-md p-2 bg-[var(--light-color)] text-[var(--mid-color)] text-center m-2.5"
             >
                 <p id="name"></p>
                 <p id="country"></p>
                 <p id="class"></p>
                 <p id="size"></p>
             </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                    let tankData = [];
+
+                    // Fetch the tank data from the JSON file
+                    fetch("tank_lib.json")
+                        .then((response) => response.json())
+                        .then((data) => {
+                            tankData = data;
+                            initializeButtons();
+                        })
+                        .catch((error) =>
+                            console.error("Error loading tank data:", error),
+                        );
+
+                    function initializeButtons() {
+                        const buttons =
+                            document.querySelectorAll(".tank-button");
+
+                        buttons.forEach((button) => {
+                            button.addEventListener("click", () => {
+                                const tankId = button.id;
+                                const selectedTank = tankData.find(
+                                    (tank) => tank.id === tankId,
+                                );
+
+                                if (selectedTank) {
+                                    updateTankInfo(selectedTank);
+                                }
+                            });
+                        });
+                    }
+
+                    function updateTankInfo(tank) {
+                        const infoContainer = document.getElementById("info");
+                        const specs = document.getElementById("specs");
+                        const description =
+                            document.getElementById("description");
+
+                        // Fade out existing content
+                        infoContainer.style.opacity = "0";
+
+                        setTimeout(() => {
+                            // Update tank details
+                            specs.innerHTML = `
+                            <p><strong>Name:</strong> ${tank.name}</p>
+                            <p><strong>Country:</strong> ${tank.country}</p>
+                            <p><strong>Class:</strong> ${tank.class}</p>
+                            <p><strong>Size:</strong> ${tank.size}</p>
+                        `;
+                            description.innerHTML = `<p>${tank.description}</p>`;
+
+                            // Fade content back in
+                            infoContainer.style.opacity = "1";
+                        }, 300); // Match this delay with CSS transition time
+                    }
+                });
+            </script>
             <div
-                id="specs"
-                class="mt-0 shadow-lg rounded-md p-2 bg-[var(--light-color)] text-[var(--mid-color)] text-center"
+                id="description"
+                class="mt-0 shadow-lg rounded-md p-2 bg-[var(--light-color)] text-[var(--mid-color)] text-center m-2.5"
             >
-                <p id="name"></p>
-                <p id="country"></p>
-                <p id="class"></p>
-                <p id="size"></p>
+                <p id="description"></p>
             </div>
         </div>
         <style>
