@@ -153,6 +153,11 @@
                         .then((data) => {
                             tankData = data;
                             initializeButtons();
+
+                            // Automatically load the "home" tank or first tank in the list
+                            if (tankData.length > 0) {
+                                updateTankInfo(tankData[0]); // Load the first tank or adjust as needed
+                            }
                         })
                         .catch((error) =>
                             console.error("Error loading tank data:", error),
@@ -164,7 +169,7 @@
 
                         buttons.forEach((button) => {
                             button.addEventListener("click", () => {
-                                const tankId = button.id;
+                                const tankId = button.id();
                                 const selectedTank = tankData.find(
                                     (tank) => tank.id === tankId,
                                 );
