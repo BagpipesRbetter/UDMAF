@@ -1,0 +1,36 @@
+:root {
+    --dark-color: #495867;
+    --mid-color: #577399;
+    --light-color: #bdd5ea;
+    --pale-color: #f7f7ff;
+}
+/* Reusable Button Style */
+.tank-button {
+    background-color: var(--mid-color);
+    color: var(--light-color);
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border: 1px solid gray;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0.5rem;
+    transition: background 0.2s;
+    width: 7rem;
+}
+.tank-button:hover {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+.flag-img {
+    width: 3rem;
+    border-radius: 0.25rem;
+}
+.tank-img {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 10px #495867;
+    max-width: 25rem;
+}
