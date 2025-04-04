@@ -2,13 +2,13 @@
   {
     "id": "home",
     "name": "Home",
-    "country": "World",
-    "class": "Home",
-    "size": "Small",
+    "country": "",
+    "class": "",
+    "size": "",
     "description": "This is a site that displays some of my favorite tanks from wwII. it is not meant to be comprehensive or exhaustive, but rather a curated selection of tanks that have left a lasting impact on military history. this is for information and entertainment purposes only. ",
-    "image_1": "",
-    "image_2": "",
-    "image_3": "",
+    "image_1": "ASSETS/IMAGES/home.gif",
+    "image_2": "ASSETS/IMAGES/home.gif",
+    "image_3": "ASSETS/IMAGES/home.gif",
     "stl": "",
     "flag": "ASSETS/IMAGES/un.svg"
   },
@@ -33,22 +33,22 @@
     "size": "Large",
     "description": "The Tiger I was a heavy German tank introduced in 1942 that became one of the most iconic tanks of World War II. Equipped with a formidable 88mm KwK 36 gun, it had exceptional firepower, capable of destroying most Allied tanks from long distances. Its thick, sloped armor made it highly resistant to enemy fire, but this came at the cost of speed and mobility. Despite its mechanical issues and the challenges of its heavy weight, the Tiger I was feared by Allied forces. It served on many fronts and became a symbol of German tank prowess during the war.",
     "image_1": "ASSETS/IMAGES/Tiger_I.jpg",
-    "image_2": "ASSETS/IMAGES/Tiger_I_2.jpg",
+    "image_2": "ASSETS/IMAGES/Tiger_I_2.gif",
     "image_3": "ASSETS/IMAGES/Tiger_I_3.jpg",
-    "gbl": "ASSETS/3D/Tiger_I.stl",
-    "flag": "ASSETS/IMAGES/de.SVg"
+    "gbl": "ASSETS/3D/Tiger_I.gbl",
+    "flag": "ASSETS/IMAGES/de.svg"
   },
   {
     "id": "Sd_Kfz_234_2_Puma",
-    "name": "Sd. Kfz. 234/2 (Puma)",
+    "name": "Sd. Kfz. 234/2",
     "country": "Germany",
     "class": "Armored Car",
     "size": "Medium",
     "description": "The Sd. Kfz. 234/2 Puma was a German armored reconnaissance vehicle, designed to provide mobility and firepower to reconnaissance units. Armed with a powerful 50mm KwK 39 L/60 gun, the Puma was highly effective in engaging light vehicles and infantry. Its 8-wheeled design gave it excellent mobility, allowing it to operate in diverse terrains. The Puma was used on the Eastern and Western Fronts, where it served as a fast, armored vehicle capable of providing intelligence and engaging in combat. Its speed and agility made it a valuable asset for German forces during the war.",
     "image_1": "ASSETS/IMAGES/Sd_Kfz_234_2_Puma.jpg",
-    "image_2": "",
-    "image_3": "ASSETS/IMAGES/M22_3.jpg",
-    "gbl": "ASSETS/3D/sd_kfz_234_2_puma.stl",
+    "image_2": "ASSETS/IMAGES/Sd_Kfz_234_2_Puma_2.jpg",
+    "image_3": "ASSETS/IMAGES/Sd_Kfz_234_2_Puma_3.jpg",
+    "gbl": "ASSETS/3D/puma.gbl",
     "flag": "ASSETS/IMAGES/de.svg"
   },
   {
@@ -58,7 +58,7 @@
     "class": "Light Tank",
     "size": "Small",
     "description": "The M22 Locust was a light American airborne tank used during World War II. It was designed to be airlifted by transport aircraft and dropped directly into combat zones, providing support for airborne infantry. The M22 was armed with a 37mm M6 gun, making it effective against infantry and light vehicles but relatively underpowered against heavier tanks. Its small size and lightweight construction allowed it to be easily transported and deployed, but it lacked the firepower and armor to be considered a true main battle tank. The M22 was primarily used in the Pacific theater, where its mobility was more valuable than its combat capabilities.",
-    "image_1": "ASSETS/IMAGES/M22.jpg",
+    "image_1": "ASSETS/IMAGES/M22.gif",
     "image_2": "ASSETS/IMAGES/M22_2.jpg",
     "image_3": "ASSETS/IMAGES/M22_3.jpg",
     "gbl": "ASSETS/3D/M22.stl",
@@ -110,7 +110,7 @@
     "class": "Medium Tank",
     "size": "Medium",
     "description": "The T-34/42 was a proposed upgrade to the iconic Soviet T-34 tank, intended to address the evolving needs of the Soviet army in the later years of World War II. It featured improved armor, a more powerful 85mm gun, and enhanced mobility, making it more capable in direct combat. The T-34/42 was designed with a turret that was better suited to the changing battlefield, with a more modern layout to improve crew efficiency. However, the tank was never mass-produced, as the war was winding down, and the Soviet Union turned its focus toward other tank designs like the T-44 and T-55.",
-    "image_1": "ASSETS/IMAGES/T-34_42.jpg",
+    "image_1": "ASSETS/IMAGES/T-34_42.gif",
     "image_2": "ASSETS/IMAGES/T-34_42_2.jpg",
     "image_3": "ASSETS/IMAGES/T-34_42_3.jpg",
     "gbl": "ASSETS/3D/T-34_42.stl",
@@ -126,7 +126,7 @@
     "image_1": "ASSETS/IMAGES/Su-122.jpg",
     "image_2": "ASSETS/IMAGES/Su-122_2.jpg",
     "image_3": "ASSETS/IMAGES/Su-122_3.jpg",
-    "gbl": "ASSETS/3D/Su-122.stl",
+    "gbl": "ASSETS/3D/Su-122.gbl",
     "flag": "ASSETS/IMAGES/su.svg"
   }
 ]

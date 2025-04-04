@@ -24,10 +24,11 @@
 .flag-img {
     width: 3rem;
     border-radius: 0.25rem;
+    align-self: center;
 }
 .tank-img {
     position: absolute;
-    top: 1.25rem;
+    top: 5.5rem;
     right: 1.25rem;
     border-radius: 0.25rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
