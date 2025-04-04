@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Fetch tank data from JSON file
-  fetch("ASSETS/JSON/tank_lib.json")
+  fetch("src/tank_lib.json")
     .then((response) => response.json())
     .then((data) => {
       tankData = data;
