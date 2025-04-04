@@ -3,11 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tanks</title>
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
-
-    <link rel="stylesheet" href="ASSETS/CSS/style.css" />
+    <title>Tanks Of WWII</title>
+    <script src="src/main.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body class="bg-[var(--pale-color)] h-screen overflow-y-auto flex flex-col">
     <!-- Header (Fixed above everything) -->
@@ -32,84 +30,48 @@
             <li class="flex items-center gap-3">
               <button id="home" class="tank-button">Home</button>
               <img
-                src="ASSETS/IMAGES/un.svg"
+                src="src/img/un.svg"
                 alt="united nations flag"
                 class="flag-img"
               />
             </li>
             <li class="flex items-center gap-3">
               <button id="StuG_III_G" class="tank-button">StuG III G</button>
-              <img
-                src="ASSETS/IMAGES/de.svg"
-                alt="german flag"
-                class="flag-img"
-              />
+              <img src="src/img/de.svg" alt="german flag" class="flag-img" />
             </li>
             <li class="flex items-center gap-3">
               <button id="Tiger_I" class="tank-button">Tiger I</button>
-              <img
-                src="ASSETS/IMAGES/de.svg"
-                alt="german flag"
-                class="flag-img"
-              />
+              <img src="src/img/de.svg" alt="german flag" class="flag-img" />
             </li>
             <li class="flex items-center gap-3">
               <button id="Sd_Kfz_234_2_Puma" class="tank-button">
                 Sd. Kfz 234/2
               </button>
-              <img
-                src="ASSETS/IMAGES/de.svg"
-                alt="german flag"
-                class="flag-img"
-              />
+              <img src="src/img/de.svg" alt="german flag" class="flag-img" />
             </li>
             <li class="flex items-center gap-3">
               <button id="M22" class="tank-button">M22</button>
-              <img
-                src="ASSETS/IMAGES/us.jpg"
-                alt="american flag"
-                class="flag-img"
-              />
+              <img src="src/img/us.jpg" alt="american flag" class="flag-img" />
             </li>
             <li class="flex items-center gap-3">
               <button id="M3" class="tank-button">M3</button>
-              <img
-                src="ASSETS/IMAGES/us.jpg"
-                alt="american flag"
-                class="flag-img"
-              />
+              <img src="src/img/us.jpg" alt="american flag" class="flag-img" />
             </li>
             <li class="flex items-center gap-3">
               <button id="M4A2" class="tank-button">M4A2</button>
-              <img
-                src="ASSETS/IMAGES/us.jpg"
-                alt="american flag"
-                class="flag-img"
-              />
+              <img src="src/img/us.jpg" alt="american flag" class="flag-img" />
             </li>
             <li class="flex items-center gap-3">
               <button id="KV-2" class="tank-button">KV-2</button>
-              <img
-                src="ASSETS/IMAGES/su.svg"
-                alt="soviet flag"
-                class="flag-img"
-              />
+              <img src="src/img/su.svg" alt="soviet flag" class="flag-img" />
             </li>
             <li class="flex items-center gap-3">
               <button id="T-34" class="tank-button">T-34</button>
-              <img
-                src="ASSETS/IMAGES/su.svg"
-                alt="soviet flag"
-                class="flag-img"
-              />
+              <img src="src/img/su.svg" alt="soviet flag" class="flag-img" />
             </li>
             <li class="flex items-center gap-3">
               <button id="SU-122" class="tank-button">SU-122</button>
-              <img
-                src="ASSETS/IMAGES/su.svg"
-                alt="soviet flag"
-                class="flag-img"
-              />
+              <img src="src/img/su.svg" alt="soviet flag" class="flag-img" />
             </li>
           </ul>
         </nav>
@@ -147,120 +109,6 @@
             class="shadow-lg rounded-md p-2 bg-[var(--light-color)] text-[var(--mid-color)] text-center m-2.5"
           ></div>
         </div>
-        <script>
-          document.addEventListener("DOMContentLoaded", () => {
-            let tankData = [];
-            let scene, camera, renderer, loader, currentModel;
-
-            function init3d() {
-              const container = document.getElementById("3d");
-              container.innerHTML = "";
-
-              scene = new THREE.Scene();
-              camera = new THREE.PerspectiveCamera(
-                75,
-                container.clientWidth / container.clientHeight,
-                0.1,
-                1000
-              );
-              camera.position.z = 5;
-
-              renderer = new THREE.WebGLRenderer({
-                antialias: true,
-                alpha: true,
-              });
-              renderer.setSize(container.clientWidth, container.clientHeight);
-              container.appendChild(renderer.domElement);
-
-              loader = new THREE.GLTFLoader();
-
-              const light = new THREE.AmbientLight(0xffffff, 1);
-              scene.add(light);
-
-              function animate() {
-                requestAnimationFrame(animate);
-                if (currentModel) {
-                  currentModel.rotation.y += 0.005;
-                }
-                renderer.render(scene, camera);
-              }
-              animate();
-            }
-
-            function loadTankModel(modelPath) {
-              if (!loader) return;
-
-              // Remove existing model if present
-              if (currentModel) {
-                scene.remove(currentModel);
-              }
-
-              loader.load(
-                modelPath,
-                (gltf) => {
-                  currentModel = gltf.scene;
-                  scene.add(currentModel);
-                },
-                undefined,
-                (error) => {
-                  console.error("Error loading model:", error);
-                }
-              );
-            }
-
-            function initializeButtons() {
-              document.querySelectorAll(".tank-button").forEach((button) => {
-                button.addEventListener("click", () => {
-                  const tankId = button.id;
-                  const selectedTank = tankData.find(
-                    (tank) => tank.id === tankId
-                  );
-                  if (selectedTank) {
-                    updateTankInfo(selectedTank);
-                  }
-                });
-              });
-            }
-
-            function updateTankInfo(tank) {
-              document.getElementById("specs").innerHTML = `
-      <p><strong>Name:</strong> ${tank.name}</p>
-      <p><strong>Country:</strong> <img src="${tank.flag}" alt="Flag" class="flag-img"></p>
-      <p><strong>Class:</strong> ${tank.class}</p>
-      <p><strong>Size:</strong> ${tank.size}</p>
-    `;
-              document.getElementById(
-                "description"
-              ).innerHTML = `<p>${tank.description}</p>`;
-              let images = [tank.image_1, tank.image_2, tank.image_3];
-              let imgIndex = 0;
-              imgs.innerHTML = `<img id="tank-image" src="${images[0]}" alt="No - Image - loaded" class="tank-img">`;
-              const imgElement = document.getElementById("tank-image");
-
-              if (images.length > 1) {
-                setInterval(() => {
-                  imgIndex = (imgIndex + 1) % images.length;
-                  imgElement.src = images[imgIndex];
-                }, 3000); // Change image every 3 seconds
-              }
-              loadTankModel(tank.model);
-            }
-
-            fetch("ASSETS/JSON/tank_lib.json")
-              .then((response) => response.json())
-              .then((data) => {
-                tankData = data;
-                initializeButtons();
-                if (tankData.length > 0) {
-                  init3d();
-                  updateTankInfo(tankData[0]);
-                }
-              })
-              .catch((error) =>
-                console.error("Error loading tank data:", error)
-              );
-          });
-        </script>
       </div>
     </div>
   </body>
