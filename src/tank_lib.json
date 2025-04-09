@@ -9,7 +9,7 @@
     "image_1": "src/img/home.gif",
     "image_2": "src/img/home.gif",
     "image_3": "src/img/home.gif",
-    "gbl": "",
+    "glb": "src/3d/Tiger_I.glb",
     "flag": "src/img/un.svg"
   },
   {
@@ -22,7 +22,7 @@
     "image_1": "src/img/StuG_III_G.jpg",
     "image_2": "src/img/Stug_III_G_2.jpg",
     "image_3": "src/img/Stug_III_G_3.jpg",
-    "gbl": "src/3d/StuG_III_G.gbl",
+    "glb": "src/3d/StuG_III_G.glb",
     "flag": "src/img/de.svg"
   },
   {
@@ -35,7 +35,7 @@
     "image_1": "src/img/Tiger_I.jpg",
     "image_2": "src/img/Tiger_I_2.gif",
     "image_3": "src/img/Tiger_I_3.jpg",
-    "gbl": "src/3d/Tiger_I.gbl",
+    "glb": "src/3d/Tiger_I.glb",
     "flag": "src/img/de.svg"
   },
   {
@@ -48,7 +48,7 @@
     "image_1": "src/img/Sd_Kfz_234_2_Puma.jpg",
     "image_2": "src/img/Sd_Kfz_234_2_Puma_2.jpg",
     "image_3": "src/img/Sd_Kfz_234_2_Puma_3.jpg",
-    "gbl": "src/3d/puma.gbl",
+    "glb": "src/3d/puma.glb",
     "flag": "src/img/de.svg"
   },
   {
@@ -61,7 +61,7 @@
     "image_1": "src/img/M22.gif",
     "image_2": "src/img/M22_2.jpg",
     "image_3": "src/img/M22_3.jpg",
-    "gbl": "src/3d/M22.gbl",
+    "glb": "src/3d/M22.glb",
     "flag": "src/img/us.jpg"
   },
   {
@@ -74,7 +74,7 @@
     "image_1": "src/img/M4A2.jpg",
     "image_2": "src/img/M4A2_2.jpg",
     "image_3": "src/img/M4A2_3.jpg",
-    "gbl": "src/3d/M4A2.gbl",
+    "glb": "src/3d/M4A2.glb",
     "flag": "src/img/us.jpg"
   },
   {
@@ -87,7 +87,7 @@
     "image_1": "src/img/M3.jpg",
     "image_2": "src/img/M3_2.jpg",
     "image_3": "src/img/M3_3.jpg",
-    "gbl": "src/3d/M3.gbl",
+    "glb": "src/3d/M3.glb",
     "flag": "src/img/us.jpg"
   },
   {
@@ -100,7 +100,7 @@
     "image_1": "src/img/KV-2.jpg",
     "image_2": "src/img/KV-2_2.jpg",
     "image_3": "src/img/KV-2_3.jpg",
-    "gbl": "src/3d/KV-2.gbl",
+    "glb": "src/3d/KV-2.glb",
     "flag": "src/img/su.svg"
   },
   {
@@ -113,7 +113,7 @@
     "image_1": "src/img/T-34_42.gif",
     "image_2": "src/img/T-34_42_2.jpg",
     "image_3": "src/img/T-34_42_3.jpg",
-    "gbl": "src/3d/T-34_42.gbl",
+    "glb": "src/3d/T-34_42.glb",
     "flag": "src/img/su.svg"
   },
   {
@@ -126,7 +126,7 @@
     "image_1": "src/img/Su-122.jpg",
     "image_2": "src/img/Su-122_2.jpg",
     "image_3": "src/img/Su-122_3.jpg",
-    "gbl": "src/3d/Su-122.gbl",
+    "glb": "src/3d/Su-122.glb",
     "flag": "src/img/su.svg"
   }
 ]
