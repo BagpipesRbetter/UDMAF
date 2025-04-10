@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tanks Of WWII</title>
+    <link rel="icon" href="/UDMAF/assets/favicon-CoVtiIYG.ico" />
+    <script type="module" crossorigin src="/UDMAF/assets/index-DDU8_SPW.js"></script>
+    <link rel="stylesheet" crossorigin href="/UDMAF/assets/index-os-jj7KX.css">
+  </head>
+  <body class="bg-[var(--dark-color)] h-screen overflow-hidden flex flex-col">
+    <header class="bg-[var(--dark-color)]">
+      <h1
+        class="font-serif text-2xl font-black text-center text-[var(--light-color)]"
+      >
+        TANKS OF WORLD WAR TWO
+      </h1>
+    </header>
+
+    <div id="viewport" class="flex flex-row flex-grow w-full">
+      <div
+        id="sidebar"
+        class="bg-[var(--dark-color)] flex-none flex flex flex-col p-3 w-fit"
+      >
+        <nav class="w-30%">
+          <ul>
+            <li class="flex items-center gap-3">
+              <button id="home" class="tank-button">Home</button>
+              <img
+                src="/UDMAF/assets/un-Dldgihk0.svg"
+                alt="united nations flag"
+                class="flag-img"
+              />
+            </li>
+            <li class="flex items-center gap-3">
+              <button id="StuG_III_G" class="tank-button">StuG III G</button>
+              <img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20version='1.0'%20xmlns='http://www.w3.org/2000/svg'%20width='1000'%20height='600'%3e%3crect%20width='1000'%20height='600'%20fill='%23d00'/%3e%3ccircle%20cx='500'%20cy='300'%20r='225'%20fill='%23fff'/%3e%3crect%20x='455'%20y='110'%20width='90'%20height='380'%20fill='%23000'/%3e%3crect%20x='310'%20y='255'%20width='380'%20height='90'%20fill='%23000'/%3e%3cpath%20d='M%20432.5,110%20v%20122.5%20h%20-122.5%20M%20567.5,110%20v%20122.5%20h%20122.5%20M%20310,367.5%20h%20122.5%20v%20122.5%20M%20690,367.5%20h%20-122.5%20v%20122.5'%20fill='none'%20stroke='%23000'%20stroke-width='15'/%3e%3c/svg%3e" alt="german" class="flag-img" />
+            </li>
+            <li class="flex items-center gap-3">
+              <button id="Tiger_I" class="tank-button">Tiger I</button>
+              <img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20version='1.0'%20xmlns='http://www.w3.org/2000/svg'%20width='1000'%20height='600'%3e%3crect%20width='1000'%20height='600'%20fill='%23d00'/%3e%3ccircle%20cx='500'%20cy='300'%20r='225'%20fill='%23fff'/%3e%3crect%20x='455'%20y='110'%20width='90'%20height='380'%20fill='%23000'/%3e%3crect%20x='310'%20y='255'%20width='380'%20height='90'%20fill='%23000'/%3e%3cpath%20d='M%20432.5,110%20v%20122.5%20h%20-122.5%20M%20567.5,110%20v%20122.5%20h%20122.5%20M%20310,367.5%20h%20122.5%20v%20122.5%20M%20690,367.5%20h%20-122.5%20v%20122.5'%20fill='none'%20stroke='%23000'%20stroke-width='15'/%3e%3c/svg%3e" alt="german" class="flag-img" />
+            </li>
+            <li class="flex items-center gap-3">
+              <button id="Sd_Kfz_234_2_Puma" class="tank-button">
+                Sd. Kfz 234/2
+              </button>
+              <img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20version='1.0'%20xmlns='http://www.w3.org/2000/svg'%20width='1000'%20height='600'%3e%3crect%20width='1000'%20height='600'%20fill='%23d00'/%3e%3ccircle%20cx='500'%20cy='300'%20r='225'%20fill='%23fff'/%3e%3crect%20x='455'%20y='110'%20width='90'%20height='380'%20fill='%23000'/%3e%3crect%20x='310'%20y='255'%20width='380'%20height='90'%20fill='%23000'/%3e%3cpath%20d='M%20432.5,110%20v%20122.5%20h%20-122.5%20M%20567.5,110%20v%20122.5%20h%20122.5%20M%20310,367.5%20h%20122.5%20v%20122.5%20M%20690,367.5%20h%20-122.5%20v%20122.5'%20fill='none'%20stroke='%23000'%20stroke-width='15'/%3e%3c/svg%3e" alt="german" class="flag-img" />
+            </li>
+            <li class="flex items-center gap-3">
+              <button id="M22" class="tank-button">M22</button>
+              <img src="/UDMAF/assets/us-Do6Yf3Jf.jpg" alt="american" class="flag-img" />
+            </li>
+            <li class="flex items-center gap-3">
+              <button id="M3" class="tank-button">M3</button>
+              <img src="/UDMAF/assets/us-Do6Yf3Jf.jpg" alt="american" class="flag-img" />
+            </li>
+            <li class="flex items-center gap-3">
+              <button id="M4A2" class="tank-button">M4A2</button>
+              <img src="/UDMAF/assets/us-Do6Yf3Jf.jpg" alt="american" class="flag-img" />
+            </li>
+            <li class="flex items-center gap-3">
+              <button id="KV-2" class="tank-button">KV-2</button>
+              <img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'%20standalone='no'?%3e%3csvg%20xmlns:dc='http://purl.org/dc/elements/1.1/'%20xmlns:cc='http://creativecommons.org/ns%23'%20xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23'%20xmlns:svg='http://www.w3.org/2000/svg'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%20width='1200'%20height='600'%20id='svg10'%3e%3cmetadata%20id='metadata16'%3e%3crdf:RDF%3e%3ccc:Work%20rdf:about=''%3e%3cdc:format%3eimage/svg+xml%3c/dc:format%3e%3cdc:type%20rdf:resource='http://purl.org/dc/dcmitype/StillImage'%20/%3e%3cdc:title%3e%3c/dc:title%3e%3c/cc:Work%3e%3c/rdf:RDF%3e%3c/metadata%3e%3cdefs%20id='defs14'%20/%3e%3cpath%20fill='%23bc0000'%20fill-opacity='1'%20d='M0%200h1200v600H0z'%20id='path2'%20style='fill:%23cc0000;fill-opacity:1'%20/%3e%3cpath%20id='path11728'%20d='m%20200.0005,37.5%20-8.41933,25.911886%20H%20164.336%20L%20186.37777,79.426122%20177.95844,105.338%20200.0005,89.323465%20222.04257,105.338%20213.62324,79.426122%20235.665,63.411886%20h%20-27.24516%20z%20m%200,13.499987%205.38828,16.583473%20h%2017.43718%20l%20-14.107,10.249496%205.38827,16.583472%20L%20200.0005,84.167224%20185.89378,94.416428%20191.28205,77.832956%20177.17504,67.58346%20h%2017.43718%20z'%20style='fill:%23ffd700;fill-opacity:1;stroke:none;stroke-width:0.14999977px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1'%20/%3e%3cg%20style='fill:%23ffd700;fill-opacity:1'%20id='g2900'%20transform='matrix(0.98931879,0,0,0.98673811,3.8297658,3.7659398)'%3e%3cpath%20id='rect4165-6'%20d='m%20137.43744,171.69421%2018.86296,18.9937%2017.78834,-17.66589%20c%2027.05847,29.021%2055.43807,56.99501%2082.28704,86.12782%204.03444,4.06233%2010.59815,4.085%2014.66056,0.0506%204.06232,-4.03445%204.08499,-10.59815%200.0506,-14.66056%20-28.81871,-27.1901%20-57.72545,-54.60143%20-86.55328,-81.89095%20l%2023.96499,-23.80003%20-33.34026,-4.61605%20z'%20style='fill:%23ffd700;fill-opacity:1;stroke:none;stroke-width:0.48919073;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1'%20/%3e%3cpath%20id='path4179-3'%20d='m%20198.2887,110.1955%20c%2015.51743,8.7394%2027.29872,21.28122%2034.2484,34.3924%207.04394,13.28902%2010.13959,27.16218%2010.20325,38.25433%200.13054,22.74374%20-18.43771,41.18184%20-41.18183,41.18184%20-12.13597,0%20-23.04607,-5.24868%20-30.58302,-13.60085%20l%20-4.16863,3.51033%20c%20-0.70999,-0.27231%20-1.46387,-0.41221%20-2.22429,-0.41276%20-1.82948,1.9e-4%20-3.56621,0.80531%20-4.74859,2.20136%20-2.97368,0.38896%20-5.46251,2.44529%20-6.40534,5.29224%20-3.13486,6.28843%20-8.63524,11.21997%20-15.29104,13.4776%20-0.0637,0.0216%20-0.11992,0.05%20-0.1758,0.0783%20-3.07749,1.12758%20-6.16259,3.1643%20-8.78919,5.80245%20-5.19155,5.23656%20-7.72858,11.93658%20-6.30024,16.63822%20-0.14098,0.40857%20-0.21361,0.83759%20-0.21498,1.26979%201.5e-4,2.17082%201.75991,3.93058%203.93073,3.93073%200.54341,-0.002%201.08053,-0.11639%201.57745,-0.33632%204.69369,1.05881%2011.06885,-1.54582%2016.05444,-6.55917%202.82624,-2.85072%204.94356,-6.22349%205.98303,-9.53062%202.31696,-6.62278%207.29699,-12.01856%2013.62281,-15.05312%200.15105,-0.0725%200.27303,-0.14714%200.38218,-0.22358%202.12082,-1.01408%203.67251,-2.92895%204.225,-5.2139%209.70222,11.44481%2024.25255,18.75299%2040.51876,19.13577%2029.83352,0.70205%2052.13299,-21.25802%2053.16414,-52.83642%200.51894,-15.89259%20-5.62993,-36.3847%20-19.6412,-53.19089%20-10.70835,-12.84441%20-26.40987,-23.50795%20-44.18699,-28.20777%20z'%20style='fill:%23ffd700;fill-opacity:1;stroke:none;stroke-width:0.50003481;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1'%20/%3e%3c/g%3e%3c/svg%3e" alt="soviet" class="flag-img" />
+            </li>
+            <li class="flex items-center gap-3">
+              <button id="T-34" class="tank-button">T-34</button>
+              <img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'%20standalone='no'?%3e%3csvg%20xmlns:dc='http://purl.org/dc/elements/1.1/'%20xmlns:cc='http://creativecommons.org/ns%23'%20xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23'%20xmlns:svg='http://www.w3.org/2000/svg'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%20width='1200'%20height='600'%20id='svg10'%3e%3cmetadata%20id='metadata16'%3e%3crdf:RDF%3e%3ccc:Work%20rdf:about=''%3e%3cdc:format%3eimage/svg+xml%3c/dc:format%3e%3cdc:type%20rdf:resource='http://purl.org/dc/dcmitype/StillImage'%20/%3e%3cdc:title%3e%3c/dc:title%3e%3c/cc:Work%3e%3c/rdf:RDF%3e%3c/metadata%3e%3cdefs%20id='defs14'%20/%3e%3cpath%20fill='%23bc0000'%20fill-opacity='1'%20d='M0%200h1200v600H0z'%20id='path2'%20style='fill:%23cc0000;fill-opacity:1'%20/%3e%3cpath%20id='path11728'%20d='m%20200.0005,37.5%20-8.41933,25.911886%20H%20164.336%20L%20186.37777,79.426122%20177.95844,105.338%20200.0005,89.323465%20222.04257,105.338%20213.62324,79.426122%20235.665,63.411886%20h%20-27.24516%20z%20m%200,13.499987%205.38828,16.583473%20h%2017.43718%20l%20-14.107,10.249496%205.38827,16.583472%20L%20200.0005,84.167224%20185.89378,94.416428%20191.28205,77.832956%20177.17504,67.58346%20h%2017.43718%20z'%20style='fill:%23ffd700;fill-opacity:1;stroke:none;stroke-width:0.14999977px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1'%20/%3e%3cg%20style='fill:%23ffd700;fill-opacity:1'%20id='g2900'%20transform='matrix(0.98931879,0,0,0.98673811,3.8297658,3.7659398)'%3e%3cpath%20id='rect4165-6'%20d='m%20137.43744,171.69421%2018.86296,18.9937%2017.78834,-17.66589%20c%2027.05847,29.021%2055.43807,56.99501%2082.28704,86.12782%204.03444,4.06233%2010.59815,4.085%2014.66056,0.0506%204.06232,-4.03445%204.08499,-10.59815%200.0506,-14.66056%20-28.81871,-27.1901%20-57.72545,-54.60143%20-86.55328,-81.89095%20l%2023.96499,-23.80003%20-33.34026,-4.61605%20z'%20style='fill:%23ffd700;fill-opacity:1;stroke:none;stroke-width:0.48919073;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1'%20/%3e%3cpath%20id='path4179-3'%20d='m%20198.2887,110.1955%20c%2015.51743,8.7394%2027.29872,21.28122%2034.2484,34.3924%207.04394,13.28902%2010.13959,27.16218%2010.20325,38.25433%200.13054,22.74374%20-18.43771,41.18184%20-41.18183,41.18184%20-12.13597,0%20-23.04607,-5.24868%20-30.58302,-13.60085%20l%20-4.16863,3.51033%20c%20-0.70999,-0.27231%20-1.46387,-0.41221%20-2.22429,-0.41276%20-1.82948,1.9e-4%20-3.56621,0.80531%20-4.74859,2.20136%20-2.97368,0.38896%20-5.46251,2.44529%20-6.40534,5.29224%20-3.13486,6.28843%20-8.63524,11.21997%20-15.29104,13.4776%20-0.0637,0.0216%20-0.11992,0.05%20-0.1758,0.0783%20-3.07749,1.12758%20-6.16259,3.1643%20-8.78919,5.80245%20-5.19155,5.23656%20-7.72858,11.93658%20-6.30024,16.63822%20-0.14098,0.40857%20-0.21361,0.83759%20-0.21498,1.26979%201.5e-4,2.17082%201.75991,3.93058%203.93073,3.93073%200.54341,-0.002%201.08053,-0.11639%201.57745,-0.33632%204.69369,1.05881%2011.06885,-1.54582%2016.05444,-6.55917%202.82624,-2.85072%204.94356,-6.22349%205.98303,-9.53062%202.31696,-6.62278%207.29699,-12.01856%2013.62281,-15.05312%200.15105,-0.0725%200.27303,-0.14714%200.38218,-0.22358%202.12082,-1.01408%203.67251,-2.92895%204.225,-5.2139%209.70222,11.44481%2024.25255,18.75299%2040.51876,19.13577%2029.83352,0.70205%2052.13299,-21.25802%2053.16414,-52.83642%200.51894,-15.89259%20-5.62993,-36.3847%20-19.6412,-53.19089%20-10.70835,-12.84441%20-26.40987,-23.50795%20-44.18699,-28.20777%20z'%20style='fill:%23ffd700;fill-opacity:1;stroke:none;stroke-width:0.50003481;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1'%20/%3e%3c/g%3e%3c/svg%3e" alt="soviet" class="flag-img" />
+            </li>
+            <li class="flex items-center gap-3">
+              <button id="SU-122" class="tank-button">SU-122</button>
+              <img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'%20standalone='no'?%3e%3csvg%20xmlns:dc='http://purl.org/dc/elements/1.1/'%20xmlns:cc='http://creativecommons.org/ns%23'%20xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23'%20xmlns:svg='http://www.w3.org/2000/svg'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%20width='1200'%20height='600'%20id='svg10'%3e%3cmetadata%20id='metadata16'%3e%3crdf:RDF%3e%3ccc:Work%20rdf:about=''%3e%3cdc:format%3eimage/svg+xml%3c/dc:format%3e%3cdc:type%20rdf:resource='http://purl.org/dc/dcmitype/StillImage'%20/%3e%3cdc:title%3e%3c/dc:title%3e%3c/cc:Work%3e%3c/rdf:RDF%3e%3c/metadata%3e%3cdefs%20id='defs14'%20/%3e%3cpath%20fill='%23bc0000'%20fill-opacity='1'%20d='M0%200h1200v600H0z'%20id='path2'%20style='fill:%23cc0000;fill-opacity:1'%20/%3e%3cpath%20id='path11728'%20d='m%20200.0005,37.5%20-8.41933,25.911886%20H%20164.336%20L%20186.37777,79.426122%20177.95844,105.338%20200.0005,89.323465%20222.04257,105.338%20213.62324,79.426122%20235.665,63.411886%20h%20-27.24516%20z%20m%200,13.499987%205.38828,16.583473%20h%2017.43718%20l%20-14.107,10.249496%205.38827,16.583472%20L%20200.0005,84.167224%20185.89378,94.416428%20191.28205,77.832956%20177.17504,67.58346%20h%2017.43718%20z'%20style='fill:%23ffd700;fill-opacity:1;stroke:none;stroke-width:0.14999977px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1'%20/%3e%3cg%20style='fill:%23ffd700;fill-opacity:1'%20id='g2900'%20transform='matrix(0.98931879,0,0,0.98673811,3.8297658,3.7659398)'%3e%3cpath%20id='rect4165-6'%20d='m%20137.43744,171.69421%2018.86296,18.9937%2017.78834,-17.66589%20c%2027.05847,29.021%2055.43807,56.99501%2082.28704,86.12782%204.03444,4.06233%2010.59815,4.085%2014.66056,0.0506%204.06232,-4.03445%204.08499,-10.59815%200.0506,-14.66056%20-28.81871,-27.1901%20-57.72545,-54.60143%20-86.55328,-81.89095%20l%2023.96499,-23.80003%20-33.34026,-4.61605%20z'%20style='fill:%23ffd700;fill-opacity:1;stroke:none;stroke-width:0.48919073;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1'%20/%3e%3cpath%20id='path4179-3'%20d='m%20198.2887,110.1955%20c%2015.51743,8.7394%2027.29872,21.28122%2034.2484,34.3924%207.04394,13.28902%2010.13959,27.16218%2010.20325,38.25433%200.13054,22.74374%20-18.43771,41.18184%20-41.18183,41.18184%20-12.13597,0%20-23.04607,-5.24868%20-30.58302,-13.60085%20l%20-4.16863,3.51033%20c%20-0.70999,-0.27231%20-1.46387,-0.41221%20-2.22429,-0.41276%20-1.82948,1.9e-4%20-3.56621,0.80531%20-4.74859,2.20136%20-2.97368,0.38896%20-5.46251,2.44529%20-6.40534,5.29224%20-3.13486,6.28843%20-8.63524,11.21997%20-15.29104,13.4776%20-0.0637,0.0216%20-0.11992,0.05%20-0.1758,0.0783%20-3.07749,1.12758%20-6.16259,3.1643%20-8.78919,5.80245%20-5.19155,5.23656%20-7.72858,11.93658%20-6.30024,16.63822%20-0.14098,0.40857%20-0.21361,0.83759%20-0.21498,1.26979%201.5e-4,2.17082%201.75991,3.93058%203.93073,3.93073%200.54341,-0.002%201.08053,-0.11639%201.57745,-0.33632%204.69369,1.05881%2011.06885,-1.54582%2016.05444,-6.55917%202.82624,-2.85072%204.94356,-6.22349%205.98303,-9.53062%202.31696,-6.62278%207.29699,-12.01856%2013.62281,-15.05312%200.15105,-0.0725%200.27303,-0.14714%200.38218,-0.22358%202.12082,-1.01408%203.67251,-2.92895%204.225,-5.2139%209.70222,11.44481%2024.25255,18.75299%2040.51876,19.13577%2029.83352,0.70205%2052.13299,-21.25802%2053.16414,-52.83642%200.51894,-15.89259%20-5.62993,-36.3847%20-19.6412,-53.19089%20-10.70835,-12.84441%20-26.40987,-23.50795%20-44.18699,-28.20777%20z'%20style='fill:%23ffd700;fill-opacity:1;stroke:none;stroke-width:0.50003481;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1'%20/%3e%3c/g%3e%3c/svg%3e" alt="soviet" class="flag-img" />
+            </li>
+          </ul>
+        </nav>
+
+        <p
+          class="shadow-lg rounded-md p-2 bg-[var(--light-color)] text-sm h-fit mt-auto text-[var(--mid-color)] text-center"
+          style="word-break: break-word; overflow-wrap: break-word"
+        >
+          <strong>WARNING</strong>:<br />IMAGES ON THIS SITE MAY<br />CONTAIN
+          NAZI SYMBOLS<br />AND/OR IMAGERY<br />THAT MAY BE ILLEGAL<br />IN YOUR
+          PROVINCE
+        </p>
+        <p
+          class="shadow-lg rounded-md p-2 bg-[var(--light-color)] text-[var(--mid-color)] h-fit mt-auto text-sm text-center"
+          style="word-break: break-word; overflow-wrap: break-word"
+          id="footer"
+        >
+          This site was built<br />and is managed by<br />
+          <a href="https://bagpipesrbetter.github.io" class="underline"
+            >BagpipesRbetter</a
+          >
+          <br />
+          <a href="mailto:evanjbarclay@gmail.com" class="underline"
+            >evanjbarclay@gmail.com</a
+          >
+        </p>
+      </div>
+
+      <div id="main-view" class="flex flex-col">
+        <div
+          id="top-main"
+          class="flex flex-row justify-between w-full flex-grow"
+        >
+          <canvas
+            class="bg-[var(--light-color)] m-3 shadow-lg object-contain rounded-md w-1/2 h-full"
+          ></canvas>
+          <div
+            id="imgs"
+            class="w-2/3 bg-[var(--light-color)] m-3 content-start shadow-lg h-fit max-h-149 rounded-md p-3 overflow-hidden"
+          ></div>
+        </div>
+
+        <div
+          id="info"
+          class="bg-[var(--dark-color)] h-1/3 mt-auto flex flex-row"
+        >
+          <div
+            id="specs"
+            class="bg-[var(--light-color)] shadow-lg rounded-md text-[var(--mid-color)] w-fit flex flex-col items-center justify-center text-center m-2.5"
+            style="word-break: break-word; overflow-wrap: break-word"
+          ></div>
+          <div
+            id="description"
+            class="bg-[var(--light-color)] text-xl p-3 shadow-lg rounded-md text-[var(--mid-color)] max-w-7/8 text-center m-2.5"
+            style="word-break: break-word; overflow-wrap: break-word"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
