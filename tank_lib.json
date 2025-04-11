@@ -9,7 +9,7 @@
     "image_1": "img/home.gif",
     "image_2": "img/home.gif",
     "image_3": "img/home.gif",
-    "glb": "3d/Tiger_I.glb",
+    "glb": "3d/Tiger_1.glb",
     "flag": "img/un.svg"
   },
   {
@@ -35,7 +35,7 @@
     "image_1": "img/Tiger_I.jpg",
     "image_2": "img/Tiger_I_2.gif",
     "image_3": "img/Tiger_I_3.jpg",
-    "glb": "3d/Tiger_I.glb",
+    "glb": "3d/Tiger_1.glb",
     "flag": "img/de.svg"
   },
   {
@@ -100,7 +100,7 @@
     "image_1": "img/KV-2.jpg",
     "image_2": "img/KV-2_2.jpg",
     "image_3": "img/KV-2_3.jpg",
-    "glb": "3d/KV-2.glb",
+    "glb": "3d/KV2.glb",
     "flag": "img/su.svg"
   },
   {
