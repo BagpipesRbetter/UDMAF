@@ -20,8 +20,8 @@
     "size": "Medium",
     "description": "The StuG III G was the most widely produced variant of the Sturmgeschütz III, a German assault gun used during World War II. It was designed primarily for infantry support and armed with a 75mm StuK 40 L/48 gun. The G variant featured improved armor and the iconic cylindrical gun mantlet, which provided better protection against enemy fire. The StuG III G served effectively in a variety of roles, including anti-tank duties, and became one of the most feared and reliable German vehicles on the battlefield. Its compact design and powerful gun made it an ideal platform for infantry support and tank destroyer operations.",
     "image_1": "img/StuG_III_G.jpg",
-    "image_2": "img/Stug_III_G_2.jpg",
-    "image_3": "img/Stug_III_G_3.jpg",
+    "image_2": "img/StuG_III_G_2.jpg",
+    "image_3": "img/StuG_III_G_3.jpg",
     "glb": "3d/StuG_III_G.glb",
     "flag": "img/de.svg"
   },
