@@ -5,22 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tanks Of WWII</title>
     <link rel="icon" href="img/favicon.ico" />
-    <script type="module" crossorigin src="/UDMAF/assets/index-4p66PqR7.js"></script>
-    <link rel="stylesheet" crossorigin href="/UDMAF/assets/index-D5QmZBF_.css">
+    <script type="module" crossorigin src="/UDMAF/assets/index-Cq0KtBaE.js"></script>
+    <link rel="stylesheet" crossorigin href="/UDMAF/assets/index-CuJC-jaI.css">
   </head>
+
   <body class="bg-[var(--dark-color)] h-screen overflow-hidden flex flex-col">
-    <header class="bg-[var(--dark-color)]">
+    <header class="bg-[var(--dark-color)] flex flex-row justify-left gap-3">
+      <button id="sidebarToggle" class="md:hidden tank-button">☰</button>
       <h1
-        class="font-serif text-2xl font-black text-center text-[var(--light-color)]"
+        class="font-serif text-2xl font-black text-center m-2 text-center text-[var(--light-color)]"
       >
         TANKS OF WORLD WAR TWO
       </h1>
     </header>
 
     <div id="viewport" class="flex flex-row flex-grow w-full">
-      <div
+      <aside
         id="sidebar"
-        class="bg-[var(--dark-color)] flex-none flex flex flex-col p-3 w-fit"
+        class="bg-[var(--dark-color)] flex-none flex flex-col p-3 w-55 max-md:fixed max-md:top-0 max-md:left-0 max-md:h-full max-md:z-40 transition-transform duration-300 transform -translate-x-full md:translate-x-0"
       >
         <nav class="w-30%">
           <ul>
@@ -73,14 +75,13 @@
           </ul>
         </nav>
 
-        <p
-          class="shadow-lg rounded-md p-2 bg-[var(--light-color)] text-sm h-fit mt-auto text-[var(--mid-color)] text-center"
-          style="word-break: break-word; overflow-wrap: break-word"
+        <div
+          class="mt-4 p-4 text-yellow-800 rounded-lg bg-yellow-50 dark:bg-yellow-800 dark:text-yellow-300 text-sm shadow"
+          role="alert"
         >
-          <strong>WARNING</strong>:<br />IMAGES ON THIS SITE MAY<br />CONTAIN
-          NAZI SYMBOLS<br />AND/OR IMAGERY<br />THAT MAY BE ILLEGAL<br />IN YOUR
-          COUNTRY
-        </p>
+          <span class="font-medium">Warning:</span> This site contains
+          historical imagery which may be illegal in your country.
+        </div>
         <p
           class="shadow-lg rounded-md p-2 bg-[var(--light-color)] text-[var(--mid-color)] h-fit mt-auto text-sm text-center"
           style="word-break: break-word; overflow-wrap: break-word"
@@ -95,7 +96,7 @@
             >evanjbarclay@gmail.com</a
           >
         </p>
-      </div>
+      </aside>
 
       <div id="main-view" class="flex flex-col">
         <div
