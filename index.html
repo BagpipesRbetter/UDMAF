@@ -5,14 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tanks Of WWII</title>
     <link rel="icon" href="img/favicon.ico" />
-    <script type="module" crossorigin src="/UDMAF/assets/index-DDFVKgfq.js"></script>
-    <link rel="stylesheet" crossorigin href="/UDMAF/assets/index-CJg3xLxj.css">
+    <script type="module" crossorigin src="/UDMAF/assets/index-CZDGkuE6.js"></script>
+    <link rel="stylesheet" crossorigin href="/UDMAF/assets/index-Cbkm-_ip.css">
   </head>
 
-  <body class="bg-[var(--dark-color)] h-screen overflow-hidden flex flex-col">
-    <button id="sidebarToggle" class="md:hidden w-fit h-fit">☰</button>
-
+  <body
+    class="bg-[var(--dark-color)] h-screen overflow-x-hidden overflow-y-auto flex flex-col"
+  >
     <div id="viewport" class="flex flex-row flex-grow w-full">
+      <button
+        id="sidebarToggle"
+        class="md:hidden w-fit h-fit position p-2 absolute text-lg"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+          />
+          <path d="M9 4v16" />
+          <path d="M14 10l2 2l-2 2" />
+        </svg></button
+      ><br />
       <aside
         id="sidebar"
         class="bg-[var(--dark-color)] overflow-y-auto flex-none flex flex-col p-3 w-55 max-md:fixed max-md:top-0 max-md:left-0 max-md:h-full max-md:z-40 transition-transform duration-300 transform -translate-x-full md:translate-x-0"
@@ -98,6 +120,10 @@
           >
         </p>
       </aside>
+      <div
+        id="overlay"
+        class="fixed inset-0 bg-[rgba(0,0,0,0.1)] z-30 hidden md:hidden"
+      ></div>
 
       <div id="main-view" class="flex flex-col h-screen">
         <div id="top-main" class="flex flex-row flex-grow w-full">
@@ -110,7 +136,7 @@
 
         <div
           id="info"
-          class="bg-[var(--dark-color)] w-full h-1/3 mt-auto flex flex-grow flex-row"
+          class="bg-[var(--dark-color)] w-full h-fit md:h-1/3 mt-auto flex flex-grow flex-row"
         >
           <div
             id="specs"
