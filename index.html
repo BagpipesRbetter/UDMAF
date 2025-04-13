@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tanks Of WWII</title>
     <link rel="icon" href="img/favicon.ico" />
-    <script type="module" crossorigin src="/UDMAF/assets/index-Cq0KtBaE.js"></script>
-    <link rel="stylesheet" crossorigin href="/UDMAF/assets/index-CuJC-jaI.css">
+    <script type="module" crossorigin src="/UDMAF/assets/index-BL_6Z8Re.js"></script>
+    <link rel="stylesheet" crossorigin href="/UDMAF/assets/index-Cwd1AvGc.css">
   </head>
 
   <body class="bg-[var(--dark-color)] h-screen overflow-hidden flex flex-col">
@@ -76,9 +76,17 @@
         </nav>
 
         <div
-          class="mt-4 p-4 text-yellow-800 rounded-lg bg-yellow-50 dark:bg-yellow-800 dark:text-yellow-300 text-sm shadow"
+          id="warning-box"
+          class="relative mt-4 p-4 text-yellow-800 rounded-lg bg-yellow-50 dark:bg-yellow-800 dark:text-yellow-300 text-sm shadow"
           role="alert"
         >
+          <button
+            id="close-warning"
+            class="absolute top-2 right-2 font-bold hover:text-red-500"
+            aria-label="Close"
+          >
+            ✕
+          </button>
           <span class="font-medium">Warning:</span> This site contains
           historical imagery which may be illegal in your country.
         </div>
@@ -103,7 +111,7 @@
           id="top-main"
           class="flex flex-row justify-between w-full flex-grow"
         >
-          <div id="canvas" class="w-1/2 h-140 m-3"></div>
+          <div id="canvas" class="w-1/2 h-100% m-3"></div>
           <div
             id="imgs"
             class="w-1/2 bg-[var(--light-color)] m-3 content-start shadow-lg h-fit max-h-149 rounded-md p-3 overflow-hidden"
@@ -116,7 +124,7 @@
         >
           <div
             id="specs"
-            class="bg-[var(--light-color)] shadow-lg rounded-md text-[var(--mid-color)] w-fit flex flex-col items-center justify-center text-center m-2.5"
+            class="bg-[var(--light-color)] p-3 shadow-lg rounded-md text-[var(--mid-color)] flex-none w-fit max-w-full flex flex-col items-center justify-center text-center m-2.5"
             style="word-break: break-word; overflow-wrap: break-word"
           ></div>
           <div
