@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tanks Of WWII</title>
     <link rel="icon" href="img/favicon.ico" />
-    <script type="module" crossorigin src="/UDMAF/assets/index-sjt_LVl7.js"></script>
-    <link rel="stylesheet" crossorigin href="/UDMAF/assets/index-De71GJYV.css">
+    <script type="module" crossorigin src="/UDMAF/assets/index-CWAVha-y.js"></script>
+    <link rel="stylesheet" crossorigin href="/UDMAF/assets/index-CjhRg7Si.css">
   </head>
 
   <body
@@ -15,7 +15,7 @@
     <div id="viewport" class="flex flex-row flex-grow w-full">
       <button
         id="sidebarToggle"
-        class="md:hidden w-fit h-fit position p-2 absolute text-lg"
+        class="md:hidden w-fit h-fit position p-2 absolute flex flex-row"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -97,12 +97,14 @@
 
         <div
           id="warning-box"
-          class="relative mt-4 p-4 text-yellow-800 rounded-lg my-3 bg-yellow-50 dark:bg-yellow-800 dark:text-yellow-300 text-sm shadow"
+          class="relative mt-auto p-2 text-yellow-800 rounded-lg h-fit w-fit bg-yellow-50 dark:bg-yellow-800 dark:text-yellow-300 text-sm shadow"
           role="alert"
         >
+          <span class="font-medium">Warning:</span> This site contains
+          historical imagery which may be offensive.
           <button
             id="close-warning"
-            class="absolute top-2 right-2 font-bold hover:text-red-500"
+            class="absolute bottom-2 right-2 font-bold hover:text-red-500"
             aria-label="Close"
           >
             <svg
@@ -112,8 +114,8 @@
               stroke="currentColor"
               stroke-linecap="round"
               stroke-linejoin="round"
-              width="24"
-              height="24"
+              width="20"
+              height="20"
               stroke-width="2"
             >
               <path
@@ -123,8 +125,6 @@
               <path d="M8.5 15.5l7 -7"></path>
             </svg>
           </button>
-          <span class="font-medium">Warning:</span> This site contains
-          historical imagery which may be illegal in your country.
         </div>
         <p
           class="shadow-lg rounded-md p-2 bg-[var(--light-color)] text-[var(--mid-color)] h-fit mt-auto text-sm text-center"
@@ -144,10 +144,7 @@
       <div id="overlay" class="fixed z-30 hidden md:hidden"></div>
 
       <div id="main-view" class="flex flex-col h-screen">
-        <div
-          id="top-main"
-          class="flex flex-row flex-grow w-full h-1/2 md:h-2/3"
-        >
+        <div id="top-main" class="flex flex-row flex-grow w-full h-1/2">
           <div id="canvas" class="w-1/2 flex-grow m-3 h-100% md:h-auto"></div>
           <div
             id="imgs"
@@ -157,16 +154,16 @@
 
         <div
           id="info"
-          class="bg-[var(--dark-color)] w-full h-fit md:h-1/3 mt-auto flex flex-grow flex-row"
+          class="bg-[var(--dark-color)] w-full h-1/2 mt-auto flex flex-grow flex-row"
         >
           <div
             id="specs"
-            class="bg-[var(--light-color)] h-fit p-3 shadow-lg rounded-md text-[var(--mid-color)] flex-none w-fit max-w-full flex flex-col items-center justify-start text-center m-2.5"
+            class="bg-[var(--light-color)] h-100% p-3 shadow-lg rounded-md text-[var(--mid-color)] flex-none w-fit max-w-full flex flex-col items-center justify-start text-center m-2.5"
             style="word-break: break-word; overflow-wrap: break-word"
           ></div>
           <div
             id="description"
-            class="bg-[var(--light-color)] md:text-xl sm:text-md p-3 shadow-lg overflow-y-auto h-fit rounded-md text-[var(--mid-color)] text-center m-2.5"
+            class="bg-[var(--light-color)] md:text-xl sm:text-md p-3 shadow-lg overflow-y-auto h-100% rounded-md text-[var(--mid-color)] text-center m-2.5"
             style="word-break: break-word; overflow-wrap: break-word"
           ></div>
         </div>
