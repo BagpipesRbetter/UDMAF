@@ -84,6 +84,7 @@
     "class": "Light Tank",
     "size": "Small",
     "description": "The M3 Lee was an American medium tank developed early in World War II, notable for its unusual dual-gun layout. It mounted a 75mm M2 or M3 gun in a right-side sponson and a 37mm gun in a fully rotating turret on top, giving it a distinctive and somewhat awkward profile. The design was a stopgap measure while the more modern M4 Sherman was being developed, but it allowed the U.S. to field a medium tank with a powerful main gun capable of taking on Axis armor. The Lee was named after Confederate General Robert E. Lee, while its British variant was called the “Grant.”<br><br>Though it saw limited use by American forces after 1943, the M3 Lee played a key role in the North African Campaign, where its 75mm gun proved effective against German and Italian tanks. However, its tall silhouette, limited traverse of the main gun, and complex layout were major drawbacks. The tank was also sent to the Soviet Union through Lend-Lease, where it was appreciated early on but quickly phased out in favor of better designs. Despite its flaws, the M3 Lee helped bridge the gap in U.S. tank development and provided valuable combat experience that influenced later American armored vehicles.",
+    "image_1": "img/M3.jpg",
     "image_2": "img/M3_2.jpg",
     "image_3": "img/M3_3.jpg",
     "glb": "3d/M3.glb",
