@@ -2,11 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Tanks Of WWII</title>
     <link rel="icon" href="img/favicon.ico" />
-    <script type="module" crossorigin src="/UDMAF/assets/index-DBTU_QyH.js"></script>
-    <link rel="stylesheet" crossorigin href="/UDMAF/assets/index-Cj2YXXrO.css">
+    <script type="module" crossorigin src="/UDMAF/assets/index-DcfeV5df.js"></script>
+    <link rel="stylesheet" crossorigin href="/UDMAF/assets/index-Cs7XeiSF.css">
   </head>
 
   <body
@@ -15,7 +15,7 @@
     <div id="viewport" class="flex flex-row flex-grow w-full">
       <button
         id="sidebarToggle"
-        class="md:hidden w-fit h-fit position p-2 absolute flex flex-row"
+        class="md:hidden w-fit h-fit position p-2 absolute flex flex-row z-50"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@
       ><br />
       <aside
         id="sidebar"
-        class="bg-[var(--dark-color)] overflow-y-auto flex-none flex flex-col p-3 w-55 max-md:fixed max-md:top-0 max-md:left-0 max-md:h-full max-md:z-40 transition-transform duration-300 transform -translate-x-full md:translate-x-0"
+        class="bg-[var(--dark-color)] overflow-y-auto flex-none flex flex-col p-3 w-55 max-md:fixed max-md:top-0 max-md:left-0 max-md:h-full max-md:z-40 max-md:w-4/5 transition-transform duration-300 transform -translate-x-full md:translate-x-0"
       >
         <h1
           class="font-serif text-2xl font-black text-center m-2 text-center text-[var(--light-color)]"
@@ -45,9 +45,9 @@
           TANKS OF WWII
         </h1>
         <nav class="w-30%">
-          <ul>
+          <ul class="max-md:flex max-md:flex-col max-md:gap-2">
             <li class="flex items-center gap-3">
-              <button id="home" class="tank-button">Home</button>
+              <button id="home" class="tank-button max-md:w-full">Home</button>
               <img
                 src="img/un.svg"
                 alt="united nations flag"
@@ -55,41 +55,45 @@
               />
             </li>
             <li class="flex items-center gap-3">
-              <button id="StuG_III_G" class="tank-button">StuG III G</button>
+              <button id="StuG_III_G" class="tank-button max-md:w-full">StuG III G</button>
               <img src="img/de.svg" alt="german" class="flag-img" />
             </li>
             <li class="flex items-center gap-3">
-              <button id="Tiger_I" class="tank-button">Tiger I</button>
+              <button id="Tiger_I" class="tank-button max-md:w-full">Tiger I</button>
               <img src="img/de.svg" alt="german" class="flag-img" />
             </li>
             <li class="flex items-center gap-3">
-              <button id="Sd_Kfz_234_2_Puma" class="tank-button">
+              <button id="Panzer_IV_H" class="tank-button max-md:w-full">Panzer IV H</button>
+              <img src="img/de.svg" alt="german" class="flag-img" />
+            </li>
+            <li class="flex items-center gap-3">
+              <button id="Sd_Kfz_234_2_Puma" class="tank-button max-md:w-full">
                 Sd. Kfz 234/2
               </button>
               <img src="img/de.svg" alt="german" class="flag-img" />
             </li>
             <li class="flex items-center gap-3">
-              <button id="M22" class="tank-button">M22</button>
+              <button id="M22" class="tank-button max-md:w-full">M22</button>
               <img src="img/us.jpg" alt="american" class="flag-img" />
             </li>
             <li class="flex items-center gap-3">
-              <button id="M3" class="tank-button">M3</button>
+              <button id="M3" class="tank-button max-md:w-full">M3</button>
               <img src="img/us.jpg" alt="american" class="flag-img" />
             </li>
             <li class="flex items-center gap-3">
-              <button id="M4A2" class="tank-button">M4A2</button>
+              <button id="M4A2" class="tank-button max-md:w-full">M4A2</button>
               <img src="img/us.jpg" alt="american" class="flag-img" />
             </li>
             <li class="flex items-center gap-3">
-              <button id="KV-2" class="tank-button">KV-2</button>
+              <button id="KV-2" class="tank-button max-md:w-full">KV-2</button>
               <img src="img/su.svg" alt="soviet" class="flag-img" />
             </li>
             <li class="flex items-center gap-3">
-              <button id="T-34" class="tank-button">T-34</button>
+              <button id="T-34" class="tank-button max-md:w-full">T-34</button>
               <img src="img/su.svg" alt="soviet" class="flag-img" />
             </li>
             <li class="flex items-center gap-3">
-              <button id="SU-122" class="tank-button">SU-122</button>
+              <button id="SU-122" class="tank-button max-md:w-full">SU-122</button>
               <img src="img/su.svg" alt="soviet" class="flag-img" />
             </li>
           </ul>
@@ -143,27 +147,36 @@
       </aside>
       <div id="overlay" class="fixed z-30 hidden md:hidden"></div>
 
-      <div id="main-view" class="flex flex-col h-screen">
-        <div id="top-main" class="flex flex-row flex-grow w-full h-1/2">
-          <div id="canvas" class="w-1/2 flex-grow m-3 h-100% md:h-auto"></div>
+      <div id="main-view" class="flex flex-col h-screen w-full">
+        <div id="top-main" class="flex flex-row flex-grow w-full h-1/2 max-md:flex-col">
+          <div id="canvas" class="w-1/2 flex-grow m-3 h-100% md:h-auto relative max-md:w-full max-md:h-[50vh]">
+            <div id="loading-overlay" class="hidden absolute inset-0 bg-[var(--dark-color)] bg-opacity-50 z-10"></div>
+            <div id="loading-wheel" class="hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
+              <div class="flex space-x-2">
+                <div class="w-3 h-3 bg-white rounded-full animate-[bounce_0.5s_infinite]" style="animation-delay: 0ms"></div>
+                <div class="w-3 h-3 bg-white rounded-full animate-[bounce_0.5s_infinite]" style="animation-delay: 100ms"></div>
+                <div class="w-3 h-3 bg-white rounded-full animate-[bounce_0.5s_infinite]" style="animation-delay: 200ms"></div>
+              </div>
+            </div>
+          </div>
           <div
             id="imgs"
-            class="w-1/2 bg-[var(--light-color)] m-3 content-start shadow-lg max-h-full rounded-md p-3 overflow-hidden"
+            class="w-1/2 bg-[var(--light-color)] m-3 content-start shadow-lg max-h-full rounded-md p-3 overflow-hidden max-md:w-full max-md:h-[50vh]"
           ></div>
         </div>
 
         <div
           id="info"
-          class="bg-[var(--dark-color)] w-full h-1/2 mt-auto flex flex-grow flex-row"
+          class="bg-[var(--dark-color)] w-full h-1/2 mt-auto flex flex-grow flex-row max-md:flex-col"
         >
           <div
             id="specs"
-            class="bg-[var(--light-color)] h-100% p-3 shadow-lg rounded-md text-[var(--mid-color)] flex-none w-fit max-w-full flex flex-col items-center justify-start text-center m-2.5"
+            class="bg-[var(--light-color)] h-100% p-3 shadow-lg rounded-md text-[var(--mid-color)] flex-none w-fit max-w-full flex flex-col items-center justify-start text-center m-2.5 max-md:w-full"
             style="word-break: break-word; overflow-wrap: break-word"
           ></div>
           <div
             id="description"
-            class="bg-[var(--light-color)] md:text-xl sm:text-md p-3 shadow-lg overflow-y-auto h-100% rounded-md text-[var(--mid-color)] text-center m-2.5"
+            class="bg-[var(--light-color)] md:text-xl sm:text-md p-3 shadow-lg overflow-y-auto h-100% rounded-md text-[var(--mid-color)] text-center m-2.5 max-md:w-full"
             style="word-break: break-word; overflow-wrap: break-word"
           ></div>
         </div>
